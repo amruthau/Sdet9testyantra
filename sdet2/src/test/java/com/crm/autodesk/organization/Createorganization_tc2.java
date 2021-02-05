@@ -5,11 +5,14 @@ package com.crm.autodesk.organization;
 *
  */
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 import com.crm.autodesk.genericlib.ExcelUtility;
@@ -26,6 +29,12 @@ public class Createorganization_tc2 {
 	WebDriverUtiles wLib = new WebDriverUtiles();
 	FileUtility flib = new FileUtility();
 	ExcelUtility eLib = new ExcelUtility();
+	
+	static
+	{
+		System.setProperty("webdriver.chrome.driver","./driver/chromedriver.exe");
+		System.setProperty("webdriver.gecko.driver","./driver/geckodriver.exe");
+	}
 	
 	@Test
 	public void createorganization() throws Throwable
@@ -73,8 +82,14 @@ public class Createorganization_tc2 {
 	    // 5	Check While Creating New Organization "Industry" Drop Down Option Is Working Or Not
 	        CreateNewOrganization createOrgPage = new CreateNewOrganization(driver);
 	        createOrgPage.getTypeLst().click();
-	       Organizations organization1 = new Organizations(driver);
-	       organization1.getInDropDown();
+	        createOrgPage.getIndustriesLst().click();
+	        Select selectdropdown = new Select(createOrgPage.getIndustriesLst());
+	        selectdropdown.getOptions();
+	       List<WebElement> AllOptions = selectdropdown.getOptions();
+	       int totallist = AllOptions.size();
+	       System.out.println(totallist);
+	      // Organizations organization1 = new Organizations(driver);
+	      // organization1.getInDropDown();
 		    
        /* 6	logout 
 		   hp.logout();

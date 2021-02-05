@@ -3,21 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.autodesk.organization.Createorganization">
+      <class name="sdet2.Extendreport.SeleniumGrid">
         <methods>
-          <include name="configAS"/>
-          <include name="configBT"/>
-          <include name="configAC"/>
-          <include name="configBS"/>
-          <include name="configBC"/>
-          <include name="configAT"/>
-          <include name="CreateorgwithIndustrydropdown"/>
-          <include name="CreateorgwithTypeDropDown"/>
-          <include name="configAM"/>
-          <include name="CreateorgwithIndustry"/>
-          <include name="configBM"/>
+          <include name="remoteExceution" invocation-numbers="1"/>
         </methods>
-      </class> <!-- com.crm.autodesk.organization.Createorganization -->
+      </class> <!-- sdet2.Extendreport.SeleniumGrid -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

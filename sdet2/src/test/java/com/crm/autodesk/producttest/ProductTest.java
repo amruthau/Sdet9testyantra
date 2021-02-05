@@ -31,7 +31,7 @@ public class ProductTest extends BaseClass{
 		
 		/* step 3 : naviagte to Product Page */ 
 		products product = new products(driver);
-		prod.getCreateProductImg().click();
+		product.getCreateProductImg().click();
 		
 		/* step 4 : create New Product */
 		CreateNewProduct cnp = new CreateNewProduct(driver);

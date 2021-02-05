@@ -9,7 +9,7 @@ import org.testng.ITestResult;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class ListenerIMP implements ITestListener{
@@ -21,7 +21,7 @@ public class ListenerIMP implements ITestListener{
     }		
 
     public void onStart(ITestContext arg0) {					
-        ExtentHtmlReporter htmlReport=new ExtentHtmlReporter(new File(".\\ExtentReport\\report.html"));				
+        ExtentSparkReporter htmlReport=new ExtentSparkReporter(new File(".\\ExtentReport\\report.html"));				
         htmlReport.config().setDocumentTitle("Extent Report");
         htmlReport.config().setTheme(Theme.DARK);
         htmlReport.config().setReportName("Functional Test");

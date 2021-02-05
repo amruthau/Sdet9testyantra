@@ -5,19 +5,17 @@
     <classes>
       <class name="com.crm.autodesk.organization.Createorganization">
         <methods>
-          <include name="configBCParallel"/>
           <include name="configAS"/>
-          <include name="configBT"/>
-          <include name="configBS"/>
-          <include name="configAT"/>
-          <include name="CreateorgwithIndustry"/>
           <include name="configAC"/>
+          <include name="configBS"/>
           <include name="configBC"/>
           <include name="Createorganization"/>
+          <include name="configAT"/>
           <include name="CreateorgwithIndustrydropdown"/>
           <include name="CreateorgwithTypeDropDown"/>
           <include name="CreateOrgwithType"/>
           <include name="configAM"/>
+          <include name="CreateorgwithIndustry"/>
           <include name="configBM"/>
         </methods>
       </class> <!-- com.crm.autodesk.organization.Createorganization -->
