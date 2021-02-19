@@ -13,6 +13,9 @@ public class ContactInfo {
 	@FindBy(xpath = "//span[@class='dvHeaderText']")
 	private WebElement successFullMSG;
 	
+	
+	
+	
 	@FindBy(id = "dtlview_Last Name")
 	private WebElement lastNameInfo;
 
@@ -24,6 +27,5 @@ public class ContactInfo {
 		return lastNameInfo;
 	}
 	
-	
-	
+
 }

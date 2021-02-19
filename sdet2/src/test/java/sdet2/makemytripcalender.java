@@ -1,5 +1,7 @@
 package sdet2;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -21,6 +23,8 @@ public class makemytripcalender
 		   
 		   //Maximize the browser
 		   driver.manage().window().maximize();
+		   driver.manage().deleteAllCookies();
+		   driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		   
 		   //Enter the URL
 		   driver.get("http://www.makemytrip.com");

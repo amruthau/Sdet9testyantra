@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.crm.autodesk.organization.Createorganization_tc2"/>
+      <class name="sdet2.practice"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -23,11 +23,14 @@ public class DataBaseUtilities {
 	
 	public void connectToDB() {
 		Driver driverRef;
-		try {
+		try 
+		{
 			driverRef = new Driver();
 			DriverManager.registerDriver(driverRef);
 			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/projects", "root", "root");
-		} catch (SQLException e) {
+		} 
+		catch (SQLException e) 
+		{
 			
 			e.printStackTrace();
 		}
